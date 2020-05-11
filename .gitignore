@@ -6,3 +6,4 @@ temp/
 
 tmp/*
 !tmp/.gitkeep
+!tmp/Estrutura e Ajustes.md
