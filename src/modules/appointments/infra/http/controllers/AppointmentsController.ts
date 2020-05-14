@@ -16,6 +16,7 @@ export default class AppointmentsController {
       date: parsedDate,
       provider_id,
     });
+
     return response.json(appointment);
   }
 }
