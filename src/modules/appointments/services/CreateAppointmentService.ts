@@ -6,7 +6,6 @@ import { injectable, inject } from 'tsyringe';
 import AppError from '@shared/errors/AppError';
 
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
-import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
@@ -24,9 +23,6 @@ class CreateAppointmentService {
 
     @inject('NotificationsRepository')
     private notificationsRepository: INotificationsRepository,
-
-    @inject('UsersRepository')
-    private usersRepository: IUsersRepository,
   ) {}
 
   public async execute({
@@ -72,12 +68,9 @@ class CreateAppointmentService {
       },
     );
 
-    // const { name }
-    const user = await this.usersRepository.findById(user_id);
-
     await this.notificationsRepository.create({
       recipient_id: provider_id,
-      content: `Novo agendamento para dia ${dateFormatted}, com seu cliente ${user?.name}`,
+      content: `Novo agendamento para dia ${dateFormatted}`,
     });
 
     return appointment;
