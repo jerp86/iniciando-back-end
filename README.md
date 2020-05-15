@@ -27,7 +27,7 @@
 ---
 
 <p align="center">
-  <img alt="Test Results" src="./tmp/testRestults.png" style="width:65%;"/>
+  <img alt="Test Results" src="./assets/testRestults.png" style="width:65%;"/>
 </p>
 
 ---
@@ -66,15 +66,15 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   - :closed_lock_with_key: [BCrypt](https://github.com/kelektiv/node.bcrypt.js)
   - [JWT](https://jwt.io/)
   - :file_folder: [Multer](https://github.com/expressjs/multer)
-  - [UUIDv4](https://github.com/thenativeweb/uuidv4)
+  - :id: [UUIDv4](https://github.com/thenativeweb/uuidv4)
   - :black_joker: [Jest](https://jestjs.io/)
   - :syringe: [TSyringe](https://github.com/microsoft/tsyringe)
-  - [Handlebars](https://handlebarsjs.com/)
+  - :wavy_dash: [Handlebars](https://handlebarsjs.com/)
   - :incoming_envelope: [Nodemailer](https://nodemailer.com/about/)
 
 ### Banco de Dados
   - :elephant: [PostgreSQL](https://www.postgresql.org/)
-  - :squirrel: [DBeaver](https://dbeaver.io/)
+  - [DBeaver](https://dbeaver.io/)
   - :whale: [Docker](https://www.docker.com/)
   - [TypeORM](https://typeorm.io/)
 
