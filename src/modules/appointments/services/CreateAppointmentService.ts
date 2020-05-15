@@ -1,8 +1,12 @@
-import { startOfHour, isBefore, getHours } from 'date-fns';
+/* eslint-disable import/no-duplicates */
+import { startOfHour, isBefore, getHours, format } from 'date-fns';
+import pt from 'date-fns/locale/pt';
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
+import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
@@ -17,6 +21,12 @@ class CreateAppointmentService {
   constructor(
     @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
+
+    @inject('NotificationsRepository')
+    private notificationsRepository: INotificationsRepository,
+
+    @inject('UsersRepository')
+    private usersRepository: IUsersRepository,
   ) {}
 
   public async execute({
@@ -52,6 +62,22 @@ class CreateAppointmentService {
       provider_id,
       user_id,
       date: appointmentDate,
+    });
+
+    const dateFormatted = format(
+      appointmentDate,
+      "dd 'de' MMMM 'de' RRRR 'às' HH'h'mm",
+      {
+        locale: pt,
+      },
+    );
+
+    // const { name }
+    const user = await this.usersRepository.findById(user_id);
+
+    await this.notificationsRepository.create({
+      recipient_id: provider_id,
+      content: `Novo agendamento para dia ${dateFormatted}, com seu cliente ${user?.name}`,
     });
 
     return appointment;
