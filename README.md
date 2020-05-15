@@ -26,6 +26,12 @@
 
 ---
 
+<p align="center">
+  <img alt="Test Results" src="./tmp/testRestults.png" style="width:65%;"/>
+</p>
+
+---
+
 # Indice
 
 - :rocket: [Sobre o Projeto](#rocket-sobre-o-projeto)
@@ -39,7 +45,7 @@
 
 A proposta do curso **Bootcamp GoStack** da [Rocketseat](https://rocketseat.com.br/) é desenvolver uma aplicação completa para barbearias e salões de beleza chamada GoBarber, onde os prestadores de serviço possam informar seus dias e horários disponíveis para o trabalho, enquanto os clientes possam optar pelo profissional que melhor se enquadre em sua escolha de dia e horário.
 
-O **Iniciando Back-end** é a construção do que será o Back-end do projeto final curso.
+O **Iniciando Back-end** é a construção do que será o Back-end do projeto final curso, o 💈️💇‍♂️️ **GoBarber** 💅️✂️.
 
 Este projeto de Back-end será desenvolvido em Node.js com TypeScript no formato RESTFull utilizando as metodologias [DDD (Domain Driven Design)](https://en.wikipedia.org/wiki/Domain-driven_design) e [TDD (Test Driven Development)](https://pt.wikipedia.org/wiki/Test-driven_development).
 
@@ -61,6 +67,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   - [JWT](https://jwt.io/)
   - :file_folder: [Multer](https://github.com/expressjs/multer)
   - [UUIDv4](https://github.com/thenativeweb/uuidv4)
+  - :black_joker: [Jest](https://jestjs.io/)
+  - :syringe: [TSyringe](https://github.com/microsoft/tsyringe)
+  - [Handlebars](https://handlebarsjs.com/)
+  - :incoming_envelope: [Nodemailer](https://nodemailer.com/about/)
 
 ### Banco de Dados
   - :elephant: [PostgreSQL](https://www.postgresql.org/)
