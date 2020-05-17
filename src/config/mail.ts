@@ -1,5 +1,6 @@
 interface IMailConfig {
   driver: 'ethereal' | 'ses';
+
   defaults: {
     from: {
       email: string;
@@ -13,7 +14,7 @@ export default {
 
   defaults: {
     from: {
-      email: 'jose@eduardo.com', // email autorizado da AWS
+      email: 'email@configurado.aws',
       name: 'José Eduardo Rodrigues Pinto',
     },
   },
