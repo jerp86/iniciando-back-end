@@ -1,8 +1,6 @@
-<h3 align="center">
+<h1 align="center">
   🚀️ Back-end 💈️💇‍♂️️ GoBarber 💅️✂️
-</h3>
-
----
+</h1>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jerp86/iniciando-back-end">
@@ -71,9 +69,18 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   - :syringe: [TSyringe](https://github.com/microsoft/tsyringe)
   - :wavy_dash: [Handlebars](https://handlebarsjs.com/)
   - :incoming_envelope: [Nodemailer](https://nodemailer.com/about/)
+  - :tada: [Celebrate](https://github.com/arb/celebrate)
+  - [DotEnv](https://github.com/motdotla/dotenv)
+  - [Class-Transformer](https://github.com/typestack/class-transformer)
+  - [AWS-SDK](https://aws.amazon.com/pt/sdk-for-node-js/)
+  - [Mime](https://github.com/broofa/mime)
+  - [IoRedis](https://github.com/luin/ioredis)
+  - [Rate-Limiter-Flexible](https://github.com/animir/node-rate-limiter-flexible)
 
 ### Banco de Dados
   - :elephant: [PostgreSQL](https://www.postgresql.org/)
+  - [MongoDB](https://www.mongodb.com/)
+  - [Redis](https://redis.io/)
   - [DBeaver](https://dbeaver.io/)
   - :whale: [Docker](https://www.docker.com/)
   - [TypeORM](https://typeorm.io/)
